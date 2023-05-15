@@ -7,9 +7,10 @@ export default function addHomeContent() {
 	const footer = document.querySelector('.footer');
 
 	homeDiv.className = 'home';
-	homeParagraph.textContent = "Welcome to Batman Pizza! Our restaurant is known for it's delicious pizzas made with fresh ingredients. Come and taste the difference! Unleash your inner Batman!";
+	homeParagraph.textContent =
+		"Welcome to Batman Pizza! Our restaurant is known for it's delicious pizzas made with fresh ingredients. Come and taste the difference! Unleash your inner Batman!";
 	homeImage.src = 'img/home.jpg';
-	
+
 	main.appendChild(homeDiv);
 	homeDiv.appendChild(homeParagraph);
 	homeDiv.appendChild(homeImage);
