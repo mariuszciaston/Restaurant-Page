@@ -1,15 +1,15 @@
-export default function addMenuContent() {
+export default function addmenuDivContent() {
 	const content = document.querySelector('#content');
 	const main = document.querySelector('.main');
-	const menu = document.createElement('div');
+	const menuDiv = document.createElement('div');
 	const footer = document.querySelector('.footer');
 
-	menu.className = 'menu';
-	main.appendChild(menu);
+	menuDiv.className = 'menu';
+	main.appendChild(menuDiv);
 
 	const pizzaListDiv = document.createElement('div');
 	pizzaListDiv.className = 'pizza-list';
-	menu.appendChild(pizzaListDiv);
+	menuDiv.appendChild(pizzaListDiv);
 
 	const pizzas = [
 		{
