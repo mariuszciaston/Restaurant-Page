@@ -51,10 +51,8 @@ body {
 	gap: 1rem;
 	font-size: 1rem;
 	margin-bottom: 1rem;
-
 	justify-content: center;
 	text-align: center;
-
 	width: 100%;
 	flex-wrap: wrap;
 }
@@ -62,9 +60,11 @@ body {
 .nav .nav-button {
 	color: white;
 	background-color: unset;
+	padding: 1px 4px 1px 8px;
 	border: none;
 	transition: 0.4s color;
 	letter-spacing: 4px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
 .nav .nav-button:hover {
@@ -74,8 +74,7 @@ body {
 
 .nav .nav-button.active {
 	color: var(--yellow);
-	text-decoration: underline;
-	text-underline-offset: 0.375rem;
+	border-bottom: 2px solid var(--yellow);
 }
 
 .main {
