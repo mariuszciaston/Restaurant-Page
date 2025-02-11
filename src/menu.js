@@ -85,6 +85,7 @@ export default function addmenuDivContent() {
 		pizzaDescriptionDiv.appendChild(pizzaNameDiv);
 
 		const hrElement = document.createElement('hr');
+		hrElement.style.margin = '24px 0';
 		pizzaDescriptionDiv.appendChild(hrElement);
 
 		const pizzaIngredientsDiv = document.createElement('div');
