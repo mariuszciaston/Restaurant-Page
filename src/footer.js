@@ -3,22 +3,10 @@ export default function addFooterContent() {
 	const footer = document.createElement('footer');
 	const span1 = document.createElement('span');
 	const span2 = document.createElement('span');
-	const emoji1 = document.createElement('span');
-	const emoji2 = document.createElement('span');
 	const link = document.createElement('a');
 	const icon = document.createElement('i');
 
 	footer.className = 'footer';
-
-	emoji1.className = 'emoji';
-	emoji1.textContent = '🍕';
-	emoji2.className = 'emoji';
-	emoji2.textContent = '🍕';
-
-	span1.appendChild(emoji1);
-	span1.appendChild(document.createTextNode(" doesn't ask silly questions, "));
-	span1.appendChild(emoji2);
-	span1.appendChild(document.createTextNode(' understands | '));
 
 	link.href = 'https://github.com/mariuszciaston/';
 	link.target = '_blank';
