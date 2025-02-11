@@ -106,6 +106,7 @@ export default function addmenuDivContent() {
 		const imgElement = document.createElement('img');
 		imgElement.src = pizzas[i].imgSrc;
 		imgElement.alt = pizzas[i].imgAlt;
+		imgElement.style.objectFit = 'cover';
 		pizzaItemDiv.appendChild(imgElement);
 	}
 
