@@ -45,7 +45,7 @@ export default function addContactContent() {
 
 	const streetDiv = document.createElement('div');
 	streetDiv.className = 'street';
-	streetDiv.innerHTML = 'Wawel Dragon Street 123, <br> Cracow 31-123';
+	streetDiv.innerHTML = 'This is Example Street 123, <br> Cracow 31-123';
 	addressDiv.appendChild(streetDiv);
 
 	const bookTableButton = document.createElement('button');
@@ -58,9 +58,10 @@ export default function addContactContent() {
 	mapIframe.src =
 		'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5122.60490993847!2d19.931358369257417!3d50.06189710000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b120455da67%3A0xc3c7f5071b750d33!2zUnluZWsgR8WCw7N3bnk!5e0!3m2!1spl!2spl!4v1684245375628!5m2!1spl!2spl';
 	mapIframe.style.border = 0;
-	mapIframe.allowFullscreen;
+	mapIframe.allowFullscreen = true;
 	mapIframe.loading = 'lazy';
 	mapIframe.referrerPolicy = 'no-referrer-when-downgrade';
+	mapIframe.style.filter = 'grayscale(100%) invert(100%)';
 	contactDiv.appendChild(mapIframe);
 
 	main.appendChild(contactDiv);
